@@ -7,6 +7,5 @@ void main() {
 void helloWorld(ExpressHttpRequest request) {
 
   request.response.writeln('Hello from firebase function');
-  request.response.headers.add("Access-Control-Allow-Origin", "*");
   request.response.close();
 }
